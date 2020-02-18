@@ -1,13 +1,13 @@
 # sqlite-runner
 Used to send text files to Sqlite and open a file with the results. It just makes running sql queries a bit easier.
 
-### Prerequisites
+## Prerequisites
 
-## Linux 
+### Linux 
 
 This only works on Linux.
 
-## Nodejs
+### Nodejs
 
 Node is needed. I use the [Node Version Manager]https://github.com/nvm-sh/nvm) (nvm) to install node.
 
@@ -19,7 +19,7 @@ nvm ls
 npm install npm -g
 ```
 
-## Typescript 
+### Typescript 
 
 This is written in Typescript so you need the compiler.
 
@@ -27,7 +27,7 @@ This is written in Typescript so you need the compiler.
 npm install -g typescript
 ```
 
-## Typescript types and other dependencies
+### Typescript types and other dependencies
 
 Node is written in Javascript so you need the type definitions so that it can be used in Typescript. There are some other dependencies too. The following installs all the dependencies based on the package.json file.
 
@@ -35,7 +35,7 @@ Node is written in Javascript so you need the type definitions so that it can be
 npm update
 ```
 
-## The sqlite-runner code
+### The sqlite-runner code
 
 To clone this code, go into a Linux terminal in the directory just above where you want the code to go.
 
@@ -46,9 +46,9 @@ npm install
 chmod a+x compile
 ```
 
-### Setting it up
+## Setting it up
 
-## Compile the program
+### Compile the program
  
 To compile the program, go into the sqlite-runner directory and run the compile script:
 
@@ -65,7 +65,7 @@ You can try running the program without any options. It should print out the hel
 ./run -h
 ```
 
-## Test the program
+### Test the program
 
 You can manually test the run program using the test database.
 
@@ -74,7 +74,7 @@ You can manually test the run program using the test database.
 ```
 The last line of output should be 'whisky|10'.
 
-## Set up Geany
+### Set up Geany
 
 I use Geany to edit SQL files, but you could use some other program. If you use another program you'll have to modify the set-up based on that how that program configures build commands.
 
@@ -110,11 +110,11 @@ would open it up in the Kate text editor.
 
 Then click on ok. Try sending the file to Sqlite by choosing the menu item Build, Send to Sqlite (F8).
 
-### Usage
+## Usage
 
 The text file you send is just a standard Sqlite sql file except for the following.
 
-## Database name
+### Database name
 
 So that the sqlite-runner program knows which database to send the sql code to, you must start the file with:
 
@@ -136,7 +136,7 @@ or
 
 You need to format it exactly as above, including the spaces.
 
-## Substitution variables
+### Substitution variables
 
 If you have an sql statement that re-uses the same text often, or you want to have a variable that you can easily change, you can use the substitution variable functionality of sqlite-runner.
 
