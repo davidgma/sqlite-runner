@@ -1,0 +1,2 @@
+#!/bin/bash
+/home/david/.nvm/versions/node/v12.16.0/bin/node /home/david/local/dev/sqlite-runner/test/build/main.js --open-with $3 --working-directory $2 $1

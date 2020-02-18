@@ -1,0 +1,23 @@
+{
+  "name": "sqlite-runner",
+  "version": "1.0.0",
+  "description": "Sends an sql file to sqlite and opens the result.",
+  "main": "./build/sqlite-runner/src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./build/sqlite-runner/src/main.js",
+    "prestart": "tsc -p ./src/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@types/command-line-args": "latest",
+    "@types/command-line-usage": "latest",
+    "@types/node": "latest",
+    "command-line-args": "latest",
+    "command-line-usage": "latest",
+    "tmp": "latest",
+    "@types/tmp": "latest"
+  }
+}
