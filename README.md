@@ -27,15 +27,7 @@ This is written in Typescript so you need the compiler.
 npm install -g typescript
 ```
 
-### Typescript types and other dependencies
-
-Node is written in Javascript so you need the type definitions so that it can be used in Typescript. There are some other dependencies too. The following installs all the dependencies based on the package.json file.
-
-```bash
-npm update
-```
-
-### The sqlite-runner code
+### The sqlite-runner code and dependencies
 
 To clone this code, go into a Linux terminal in the directory just above where you want the code to go.
 
@@ -43,6 +35,7 @@ To clone this code, go into a Linux terminal in the directory just above where y
 git clone https://github.com/davidgma/sqlite-runner.git
 cd sqlite-runner
 npm install
+npm update
 chmod a+x compile
 ```
 
@@ -50,7 +43,7 @@ chmod a+x compile
 
 ### Compile the program
  
-To compile the program, go into the sqlite-runner directory and run the compile script:
+To compile the program, go into the sqlite-runner directory if you aren't already in it and run the compile script:
 
 ```bash
 cd sqlite-runner
