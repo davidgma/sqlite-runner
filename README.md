@@ -9,7 +9,7 @@ This only works on Linux.
 
 ### Nodejs
 
-Node is needed. I use the [Node Version Manager]https://github.com/nvm-sh/nvm) (nvm) to install node.
+Node is needed. I use the [Node Version Manager](https://github.com/nvm-sh/nvm) (nvm) to install node.
 
 Once nvm is installed, this installs the latest LTS (long term support) version of Node and the Node Package Manager (npm):
 
