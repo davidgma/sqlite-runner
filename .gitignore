@@ -1,6 +1,9 @@
 # Build directory
 build
 
+# Run script (created by compile)
+run
+
 # Logs
 logs
 *.log
