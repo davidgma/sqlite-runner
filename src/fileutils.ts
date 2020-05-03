@@ -171,7 +171,19 @@ export class FileUtils {
             let process: ChildProcess
                 = spawn(command, args);
             process.stdout.on('data', (data) => {
-                ret.push(data.toString());
+                let str: string = data.toString();
+                // The default pageSize of sqlite3 is 4096
+                let pageSize = 4096;
+                // If the last set of data sent through
+                // reached the pageSize then this set of 
+                // data should be added onto the last set.
+                if (ret.length > 0 &&
+                    ret[ret.length - 1].length == pageSize) {
+                        ret[ret.length - 1] += str;
+                }
+                else {
+                    ret.push(str);
+                }
             });
             process.stderr.on('data', (data) => {
                 ret.push(data.toString());
